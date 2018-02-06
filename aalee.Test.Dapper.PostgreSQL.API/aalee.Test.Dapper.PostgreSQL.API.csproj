@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Npgsql" Version="3.2.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\aalee.Test.Dapper.PostgreSQL.Contracts\aalee.Test.Dapper.PostgreSQL.Contracts.csproj" />
+    <ProjectReference Include="..\aalee.Test.Dapper.PostgreSQL.Repository\aalee.Test.Dapper.PostgreSQL.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
